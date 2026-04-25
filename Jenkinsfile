@@ -5,8 +5,8 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building the application'
-                sudo sh ls
-                sudo sh pwd
+                sh 'ls -la'
+                sh 'pwd'
             }
         }
 
