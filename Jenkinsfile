@@ -5,8 +5,8 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building the application'
-                ls
-                pwd
+                sh ls
+                sh pwd
             }
         }
 
